@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35013.160
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Travela.WebApi", "Travela.WebApi\Travela.WebApi.csproj", "{AEDD132C-303F-445D-AD2A-B55E85C9A21E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Travela.EntityLayer", "Travela.EntityLayer\Travela.EntityLayer.csproj", "{630E802B-51AB-4A0E-8F30-957836A326A1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AEDD132C-303F-445D-AD2A-B55E85C9A21E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AEDD132C-303F-445D-AD2A-B55E85C9A21E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AEDD132C-303F-445D-AD2A-B55E85C9A21E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AEDD132C-303F-445D-AD2A-B55E85C9A21E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{630E802B-51AB-4A0E-8F30-957836A326A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{630E802B-51AB-4A0E-8F30-957836A326A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{630E802B-51AB-4A0E-8F30-957836A326A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{630E802B-51AB-4A0E-8F30-957836A326A1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {00096AC6-D22B-436E-B5CD-1CCF33DE1432}
+	EndGlobalSection
+EndGlobal

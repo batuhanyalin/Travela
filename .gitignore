@@ -1,0 +1,19 @@
+# Ignore Visual Studio temporary files, build results, and
+# folder-based project configuration
+*.vs/
+**/.vs/
+.vscode/
+.idea/
+.vscode/
+.vs/
+*.vcxproj.user
+*.code-workspace
+*.njsproj
+*.sln.docstates
+
+# Ignore node_modules
+node_modules/
+
+# Ignore build output directories
+bin/
+obj/
