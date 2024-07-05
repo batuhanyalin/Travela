@@ -10,35 +10,40 @@ namespace Travela.DataAccessLayer.Repositories
 {
     public class GenericRepository<T> : IGenericDal<T> where T : class
     {
-        TravelaContext context = new TravelaContext();
+        private readonly TravelaContext _context;
+
+        public GenericRepository(TravelaContext context)
+        {
+            _context = context;
+        }
 
         public void Delete(int id)
         {
-            var value = context.Set<T>().Find(id);
-            context.Set<T>().Remove(value);
-            context.SaveChanges();
+            var value = _context.Set<T>().Find(id);
+            _context.Set<T>().Remove(value);
+            _context.SaveChanges();
         }
 
         public T GetById(int id)
         {
-            return context.Set<T>().Find(id);
+            return _context.Set<T>().Find(id);
         }
 
         public List<T> GetListAll()
         {
-            return context.Set<T>().ToList();
+            return _context.Set<T>().ToList();
         }
 
         public void Insert(T entity)
         {
-            context.Set<T>().Add(entity);
-            context.SaveChanges();
+            _context.Set<T>().Add(entity);
+            _context.SaveChanges();
         }
 
         public void Update(T entity)
         {
-            context.Set<T>().Update(entity);
-            context.SaveChanges();
+            _context.Set<T>().Update(entity);
+            _context.SaveChanges();
         }
     }
 }
