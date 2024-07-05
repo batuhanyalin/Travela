@@ -7,9 +7,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Travela.WebApi", "Travela.W
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Travela.EntityLayer", "Travela.EntityLayer\Travela.EntityLayer.csproj", "{630E802B-51AB-4A0E-8F30-957836A326A1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Travela.DataAccessLayer", "Travela.DataAccessLayer\Travela.DataAccessLayer.csproj", "{66540BC9-2252-4F1F-AAFB-77BD4C3B0827}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Travela.DataAccessLayer", "Travela.DataAccessLayer\Travela.DataAccessLayer.csproj", "{66540BC9-2252-4F1F-AAFB-77BD4C3B0827}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Travela.BusinessLayer", "Travela.BusinessLayer\Travela.BusinessLayer.csproj", "{7F88F1BA-163B-48BF-9D2F-71B4B07DB75B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Travela.BusinessLayer", "Travela.BusinessLayer\Travela.BusinessLayer.csproj", "{7F88F1BA-163B-48BF-9D2F-71B4B07DB75B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Travela.WebUI", "Travela.WebUI\Travela.WebUI.csproj", "{959B5754-74A8-4F53-8A4B-F663CD33B9B9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{7F88F1BA-163B-48BF-9D2F-71B4B07DB75B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7F88F1BA-163B-48BF-9D2F-71B4B07DB75B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7F88F1BA-163B-48BF-9D2F-71B4B07DB75B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{959B5754-74A8-4F53-8A4B-F663CD33B9B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{959B5754-74A8-4F53-8A4B-F663CD33B9B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{959B5754-74A8-4F53-8A4B-F663CD33B9B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{959B5754-74A8-4F53-8A4B-F663CD33B9B9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,0 +1,30 @@
+﻿@model List<Travela.WebUI.Dtos.ResultCategoryDto>
+@{
+    Layout = null;
+}
+
+<link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+<div class="container">
+    <br />
+    <a class="btn btn-primary" href="#">Yeni Kategori Girişi</a>
+    <br />
+    <table class="table table-hover">
+        <tr>
+            <th>#</th>
+            <th>Kategori Adı</th>
+            <th>Görsel</th>
+            <th>Sil</th>
+            <th>Güncelle</th>
+        </tr>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.categoryId</td>
+                <td>@item.categoryName</td>
+                <td>@item.imageUrl</td>
+                <td><a class="btn btn-danger" href="/@item.categoryId">Sil</a></td>
+                <td><a class="btn btn-success" href="/@item.categoryId">Güncelle</a></td>
+            </tr>
+        }
+    </table>
+</div>

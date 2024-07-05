@@ -15,6 +15,9 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<TravelaContext>();
 builder.Services.AddScoped<ICategoryDal,EFCategoryDal>();
 builder.Services.AddScoped<ICategoryService,CategoryManager>();
+builder.Services.AddScoped<IDestinationDal, EFDestinationDal>();
+builder.Services.AddScoped<IDestinationService, DestinationManager>();
+builder.Services.AddHttpClient(); //HttpClient constructure metot olarak yazýldýðý için programa tanýtýlýyor.
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

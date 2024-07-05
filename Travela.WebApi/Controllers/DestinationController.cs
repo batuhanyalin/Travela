@@ -32,19 +32,19 @@ namespace Travela.WebApi.Controllers
         public IActionResult UpdateDestination(Destination destination)
         {
             _destinationService.TUpdate(destination);
-            return Ok("Kategori güncelleme işlemi başarıyla tamamlandı.");
+            return Ok("Rota güncelleme işlemi başarıyla tamamlandı.");
         }
         [HttpPost]
         public IActionResult CreateDestination(Destination destination)
         {
             _destinationService.TInsert(destination);
-            return Ok("Kategori ekleme işlemi başarıyla tamamlandı.");
+            return Ok("Rota ekleme işlemi başarıyla tamamlandı.");
         }
         [HttpDelete]
         public IActionResult DeleteDestination(int id)
         {
             _destinationService.TDelete(id);
-            return Ok("Kategori silme işlemi başarıyla tamamlandı.");
+            return Ok("Rota silme işlemi başarıyla tamamlandı.");
         }
 
     }
