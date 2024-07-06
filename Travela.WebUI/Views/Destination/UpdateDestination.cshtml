@@ -1,0 +1,46 @@
+﻿@model Travela.WebUI.Dtos.UpdateDestinationDto
+@{
+    Layout = null;
+}
+
+<br />
+<link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+<div class="container">
+    <form method="post" enctype="multipart/form-data">
+        <div class="row">
+            <div class="col col-md-6">
+                <input type="hidden" asp-for="DestinationId" />
+                <input type="hidden" asp-for="Date" />
+                <label>Ülke</label>
+                <input type="text" class="form-control" asp-for="Country" />
+                <br />
+                <label>Şehir</label>
+                <input type="text" class="form-control" asp-for="City" />
+                <br />
+                <label>Gün Sayısı</label>
+                <input type="number" class="form-control" asp-for="CountDay" />
+                <br />
+                <label>Başlık</label>
+                <input type="text" class="form-control" asp-for="SubTitle" />
+                <br />
+                <label>Açıklama</label>
+                <input type="text" class="form-control" asp-for="Description" />
+                <br />
+                <label>Fiyat</label>
+                <input type="text" class="form-control" asp-for="Price" />
+                <br />
+            </div>
+            <div class="col col-md-6">
+                <div class="col">
+                    <h5>Mevcut Görsel</h5>
+                    <img height="150" width="110" src="@Model.ImageUrl" />
+                </div>
+                <div class="col">
+                    <label>Görseli Değiştir</label>
+                    <input type="file" class="form-control" name="Image" />
+                </div>
+            </div>
+        </div>
+        <button class="btn btn-primary">Güncelle</button>
+    </form>
+</div>

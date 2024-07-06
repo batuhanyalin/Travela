@@ -46,6 +46,5 @@ namespace Travela.WebApi.Controllers
             _destinationService.TDelete(id);
             return Ok("Rota silme işlemi başarıyla tamamlandı.");
         }
-
     }
 }
