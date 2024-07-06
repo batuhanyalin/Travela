@@ -1,0 +1,16 @@
+﻿@model Travela.WebUI.Dtos.CreateCategoryDto
+@{
+    Layout = null;
+}
+<link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+<div class="container">
+    <form method="post">
+        <label>Kategori Adı</label>
+        <input type="text" class="form-control" asp-for="categoryName" />
+        <br />
+        <label>Kategori Görseli</label>
+        <input type="text" class="form-control" asp-for="imageUrl" />
+        <br />
+        <button class="btn btn-primary">Oluştur</button>
+    </form>
+</div>
