@@ -31,11 +31,11 @@ namespace Travela.WebUI.Controllers
         {
             return View();
         }
-        public  async Task<IActionResult> CreateCategory(CreateCategoryDto createCategoryDto)
+        public async Task<IActionResult> CreateCategory(CreateCategoryDto createCategoryDto)
         {
-            var client= _httpClientFactory.CreateClient();
-            var jsonData=JsonConvert.SerializeObject(createCategoryDto);
-            StringContent stringContent=new StringContent(jsonData,Encoding.UTF8,"application/json"); //burada gönderilen içeriği, türkçe karaktere uygun formata getirtiyoruz.
+            var client = _httpClientFactory.CreateClient();
+            var jsonData = JsonConvert.SerializeObject(createCategoryDto);
+            StringContent stringContent = new StringContent(jsonData, Encoding.UTF8, "application/json"); //burada gönderilen içeriği, türkçe karaktere uygun formata getirtiyoruz.
             var responseMessage = await client.PostAsync("https://localhost:7092/api/Category", stringContent);
             if (responseMessage.IsSuccessStatusCode)
             {
@@ -43,5 +43,12 @@ namespace Travela.WebUI.Controllers
             }
             return View();
         }
+        public async Task<IActionResult> DeleteCategory(int id)
+        {
+            var client = _httpClientFactory.CreateClient();
+            await client.DeleteAsync("https://localhost:7092/api/Category?id=" + id);
+           return RedirectToAction("ListCategory");
+        }
+
     }
 }

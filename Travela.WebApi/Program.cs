@@ -8,15 +8,18 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
+builder.Services.AddDbContext<TravelaContext>();
+
+builder.Services.AddScoped<ICategoryDal, EFCategoryDal>();
+builder.Services.AddScoped<ICategoryService, CategoryManager>();
+
+builder.Services.AddScoped<IDestinationDal, EFDestinationDal>();
+builder.Services.AddScoped<IDestinationService, DestinationManager>();
+
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
-builder.Services.AddDbContext<TravelaContext>();
-builder.Services.AddScoped<ICategoryDal,EFCategoryDal>();
-builder.Services.AddScoped<ICategoryService,CategoryManager>();
-builder.Services.AddScoped<IDestinationDal, EFDestinationDal>();
-builder.Services.AddScoped<IDestinationService, DestinationManager>();
 
 var app = builder.Build();
 

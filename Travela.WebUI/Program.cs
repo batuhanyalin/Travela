@@ -1,8 +1,11 @@
 var builder = WebApplication.CreateBuilder(args);
 
+
+builder.Services.AddHttpClient();
+
 // Add services to the container.
 builder.Services.AddControllersWithViews();
-builder.Services.AddHttpClient(); //HttpClient constructure metot olarak yazýldýðý için programa tanýtýlýyor.
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
